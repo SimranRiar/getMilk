@@ -5,8 +5,11 @@ using UnityEngine.SceneManagement;
 
 public class Trigger_1 : MonoBehaviour
 {
-    void onTriggerEnter(Collider other)
+    void OnTriggerEnter(Collider other)
     {
-        Debug.Log("Passed through Trigger");
+        if (other.gameObject.CompareTag("Character"))
+        {
+            SceneManager.LoadScene("Scene_1");
+        }
     }
 }
