@@ -9,6 +9,7 @@ public class Trigger_4 : MonoBehaviour
     {
         if (other.gameObject.CompareTag("Character"))
         {
+            Debug.Log("Enter");
             SceneManager.LoadScene("Scene_4");
         }
     }
